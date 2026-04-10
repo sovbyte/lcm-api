@@ -25,7 +25,8 @@ app.MapGet("/arnur.sovetkali@gmail.com", (string x, string y) =>
     return Results.Text(lcm.ToString(), "text/plain");
 });
 
-app.Urls.Add("http://0.0.0.0:10000");
+var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
+app.Urls.Add($"http://0.0.0.0:{port}");
 
 app.Run();
 return;
