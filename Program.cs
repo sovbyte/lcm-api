@@ -2,8 +2,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
-//app.UseHttpsRedirection();
-
 app.MapGet("/arnur.sovetkali@gmail.com", (string x, string y) =>
 {
     if (!uint.TryParse(x, out var valX) || !uint.TryParse(y, out var valY))
