@@ -1,9 +1,0 @@
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/Itransition_Task3
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/appsettings.Development.json
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/appsettings.json
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/Itransition_Task3.dll
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/Itransition_Task3.deps.json
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/Itransition_Task3.runtimeconfig.json
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/Itransition_Task3.pdb
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/Microsoft.AspNetCore.OpenApi.dll
-/home/arnur/RiderProjects/Itransition_Task2/Itransition_Task3/bin/Release/net10.0/publish/Microsoft.OpenApi.dll
