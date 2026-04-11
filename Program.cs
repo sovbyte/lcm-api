@@ -1,10 +1,12 @@
+using System.Numerics;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
 app.MapGet("arnur_sovetkali_gmail_com", (string x, string y) =>
 {
-    if (!ulong.TryParse(x, out var valX) || !ulong.TryParse(y, out var valY))
+    if (!BigInteger.TryParse(x, out var valX) || !BigInteger.TryParse(y, out var valY))
     {
         return Results.Text("NaN", "text/plain");
     }
@@ -29,7 +31,7 @@ app.Urls.Add($"http://0.0.0.0:{port}");
 app.Run();
 return;
 
-static ulong Gcd(ulong a, ulong b)
+static BigInteger Gcd(BigInteger a, BigInteger b)
 {
     while (b != 0)
     {
