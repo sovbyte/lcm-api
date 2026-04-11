@@ -15,12 +15,9 @@ app.MapGet("arnur_sovetkali_gmail_com", (string x, string y) =>
     {
         return Results.Text("0", "text/plain");
     }
-
-    var a = valX;
-    var b = valY;
-
-    var gcd = Gcd(a, b);
-    var lcm = (a / gcd) * b;
+    
+    var gcd = Gcd(valX, valY);
+    var lcm = (valX / gcd) * valY;
 
     return Results.Text(lcm.ToString(), "text/plain");
 });
