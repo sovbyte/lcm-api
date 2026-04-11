@@ -4,7 +4,7 @@ var app = builder.Build();
 
 app.MapGet("arnur_sovetkali_gmail_com", (string x, string y) =>
 {
-    if (!uint.TryParse(x, out var valX) || !uint.TryParse(y, out var valY))
+    if (!ulong.TryParse(x, out var valX) || !ulong.TryParse(y, out var valY))
     {
         return Results.Text("NaN", "text/plain");
     }
@@ -14,8 +14,8 @@ app.MapGet("arnur_sovetkali_gmail_com", (string x, string y) =>
         return Results.Text("0", "text/plain");
     }
 
-    long a = valX;
-    long b = valY;
+    var a = valX;
+    var b = valY;
 
     var gcd = Gcd(a, b);
     var lcm = (a / gcd) * b;
@@ -29,7 +29,7 @@ app.Urls.Add($"http://0.0.0.0:{port}");
 app.Run();
 return;
 
-static long Gcd(long a, long b)
+static ulong Gcd(ulong a, ulong b)
 {
     while (b != 0)
     {
